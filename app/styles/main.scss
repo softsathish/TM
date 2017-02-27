@@ -1,0 +1,12 @@
+$testProp:'red';
+@import "../../bower_components/bootstrap/dist/css/bootstrap.min.css";
+html,body{height:100%;position:relative;}
+.contentContainer,.page-wrapper{height:100%;position: relative;}
+.progressBarContainer{
+	max-width:600px;margin:0px auto;
+}
+.progressBar{border:1px solid #999;padding:10px;text-align:center;margin:5px;position: relative;overflow:hidden;height:40px;}
+.progressBar div{float:left;width:100%;position:absolute;margin:-10px;transition:0.5s;padding:10px 0px;}
+.buttonsList{border-top:1px solid #ddd;margin:5px 0px;padding:10px 2px;}
+.buttonsList .btn{margin:0px 5px;}
+.progressRed{background:red !important;color:#fff;}

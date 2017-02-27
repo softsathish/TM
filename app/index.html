@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js app-loading" ng-app="angAppName">
+<head>
+  <meta charset="utf-8">
+  <base href="" />
+  <title ng-bind="pageTitle">Page Title</title>
+  <meta name="description" ng-attr-content="{{pageContent}}" content="PageContent">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body ng-controller="AppCtrl">
+
+<!-- Added to display the toast messages -->
+<toast></toast>
+
+<!-- Add your site or application content here -->
+
+<!-- Vikas Commented to avoid Loading to show up.
+<div id="app-loading-wrapper" shown-when-loading>
+  <div class="app-loading"></div>
+</div>
+<div class="hidden"><div ng-translate-language-select></div></div>
+<div class="page-wrapper" hidden-when-loading>
+-->
+
+<div class="page-wrapper container">
+  <div class="header">
+    <div ng-include="'views/header.html'"></div>
+  </div>
+
+  <div class="contentContainer" ng-view=""></div>
+  <div ng-include="'views/footer.html'"></div>
+  
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/ng-idle/angular-idle.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/appCtrl.js"></script>
+<script src="scripts/controllers/MainCtrl.js"></script>
+<script src="scripts/services/permissions.js"></script>
+<script src="scripts/services/mainServices.js"></script>
+
+<!-- endbuild -->
+</body>
+</html>

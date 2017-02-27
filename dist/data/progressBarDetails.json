@@ -1,0 +1,14 @@
+{
+    "buttons": [
+        -25,
+        -10,
+        10,
+        25
+    ],
+    "bars": [
+        {"barName":"Bar1","barFill":62},
+        {"barName":"Bar2","barFill":45},
+        {"barName":"Bar3","barFill":62}
+    ],
+    "limit": 230
+}

@@ -1,0 +1,7 @@
+<!doctype html> <html class="no-js app-loading" ng-app="angAppName"> <head> <meta charset="utf-8"> <base href=""/> <title ng-bind="pageTitle">Page Title</title> <meta name="description" ng-attr-content="{{pageContent}}" content="PageContent"> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.793c86de.css"> <link rel="stylesheet" href="styles/main.0c4bbd3b.css">  <body ng-controller="AppCtrl"> <!-- Added to display the toast messages --> <toast></toast> <!-- Add your site or application content here --> <!-- Vikas Commented to avoid Loading to show up.
+<div id="app-loading-wrapper" shown-when-loading>
+  <div class="app-loading"></div>
+</div>
+<div class="hidden"><div ng-translate-language-select></div></div>
+<div class="page-wrapper" hidden-when-loading>
+--> <div class="page-wrapper container"> <div class="header"> <div ng-include="'views/header.html'"></div> </div> <div class="contentContainer" ng-view=""></div> <div ng-include="'views/footer.html'"></div> <script src="scripts/vendor.53277205.js"></script> <script src="scripts/scripts.b0dbbe43.js"></script> </div> 
